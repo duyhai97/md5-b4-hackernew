@@ -1,5 +1,6 @@
 
 <div *ngFor="let art of articles">
-  <a href="{{art.url}}" target="_blank" >{{art.title}}  </a>
+  <a href="{{art.url}}" target="_blank" >{{art.title}} </a>
+  {{art.likes}}likes
   <app-like></app-like>
 </div>

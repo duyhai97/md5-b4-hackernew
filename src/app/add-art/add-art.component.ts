@@ -20,7 +20,8 @@ export class AddArtComponent implements OnInit {
   }
 
   addNewArticle(){
-    this.article = this.data.article
+    this.article = this.data.article;
+    this.article.likes=0;
     this.articles.push(this.article);
     console.log(124, this.articles);
   }

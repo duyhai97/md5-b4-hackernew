@@ -6,40 +6,46 @@ import {Article} from "../article";
 })
 export class DataService {
 
-  article: Article = {};
 
+  article: Article = {};
+  // @ts-ignore
   articles: Article[] = [
     {
-      id:1,
+
       title: 'Javascript',
-      url: 'https://medium.freecodecamp.org/the-evolution-of-async-javascript-from-callbacks-to-promises-to-async-await-e73b047f2f40'
+      url: 'https://medium.freecodecamp.org/the-evolution-of-async-javascript-from-callbacks-to-promises-to-async-await-e73b047f2f40',
+      likes: 8
     },
+
     {
-      id:2,
+
       title: 'Game of Life',
-      url: 'https://thefullsnack.com/posts/game-of-life.html'
+      url: 'https://thefullsnack.com/posts/game-of-life.html',
+      likes:3
     },
     {
-      id:3,
+
       title: ' REST API',
-      url: 'https://medium.com/eway/nguyên-tắc-thiết-kế-rest-api-23add16968d7'
+      url: 'https://medium.com/eway/nguyên-tắc-thiết-kế-rest-api-23add16968d7',
+      likes:5
     },
     {
-      id:4,
+
       title: ' Users',
-      url: 'https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/'
+      url: 'https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/',
+      likes:7
     },
     {
-      id:5,
       title: 'Web Server',
-      url: 'https://ruslanspivak.com/lsbaws-part1/'
+      url: 'https://ruslanspivak.com/lsbaws-part1/',
+      likes:6
     }
   ];
 
-  addNewArticle() {
-    this.articles.push(this.article);
-    console.log(124, this.articles);
-  }
+  // addNewArticle() {
+  //   this.articles.push(this.article);
+  //   console.log(124, this.articles);
+  // }
 
 
   constructor() { }
