@@ -8,6 +8,8 @@ import {FormsModule} from "@angular/forms";
 import { LikeComponent } from './like/like.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { AddArtComponent } from './add-art/add-art.component';
+import { ListArtComponent } from './list-art/list-art.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { FooterComponent } from './footer/footer.component';
     LikeComponent,
     NavbarComponent,
     FooterComponent,
+    AddArtComponent,
+    ListArtComponent,
   ],
     imports: [
         BrowserModule,
